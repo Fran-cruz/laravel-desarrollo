@@ -6,14 +6,15 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Estudiante;
 
-class Profile extends Model
+class Faculty extends Model
 {
-    /** @use HasFactory<\Database\Factories\ProfileFactory> */
+    /** @use HasFactory<\Database\Factories\FacultyFactory> */
     use HasFactory;
-    protected $fillable = ['address', 'birth_date'];
+
+    protected $table = ['faculties'];
 
     public function student()
     {
-        return $this->belongsTo(Estudiante::class);
+        return $this->hasMany(Estudiante::class);
     }
 }
