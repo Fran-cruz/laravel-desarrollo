@@ -1,0 +1,12 @@
+30/1/2026
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+# Changes to be committed:
+#	new file:   app/Http/Controllers/ProfileController.php
+#	modified:   app/Models/Estudiante.php
+#	new file:   app/Models/Profile.php
+#	new file:   database/factories/ProfileFactory.php
+#	new file:   database/migrations/2026_01_30_195150_create_profiles_table.php
+#	new file:   database/seeders/ProfileSeeder.php
