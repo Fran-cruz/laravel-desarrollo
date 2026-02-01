@@ -7,9 +7,9 @@ use App\Models\Profile;
 use App\Models\Faculty;
 use App\Models\Cursos;
 
-class Estudiante extends Model
+class Student extends Model
 {
-    protected $fillable = ['nombre', 'facultad', 'correo', 'telefono'];
+    protected $fillable = ['name', 'faculty', 'email', 'phone', 'age'];
 
     public function profile(){
         return $this->hasOne(Profile::class);
